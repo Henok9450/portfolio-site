@@ -159,7 +159,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-12 md:mb-0">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">Henok Birhanu</span>
+              Hi, I &apos m <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">Henok Birhanu</span>
             </h1>
             {/* UPDATED TEXT SECTION START */}
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-justify">
