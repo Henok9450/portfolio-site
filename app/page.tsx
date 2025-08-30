@@ -159,7 +159,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-12 md:mb-0">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Hi, I &apos m <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">Henok Birhanu</span>
+              Hi, I&apos;m <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">Henok Birhanu</span>
             </h1>
             {/* UPDATED TEXT SECTION START */}
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-justify">
@@ -222,7 +222,7 @@ export default function Home() {
               My Projects
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Here are some of the projects I've worked on, showcasing my skills and approach to problem-solving.
+              Here are some of the projects It&apos;ve worked on, showcasing my skills and approach to problem-solving.
             </p>
           </div>
 
@@ -375,7 +375,7 @@ export default function Home() {
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
-                  Message sent successfully! I'll get back to you soon.
+                  Message sent successfully! I&apos;ll get back to you soon.
                 </div>
               )}
               {submitStatus === 'error' && (
