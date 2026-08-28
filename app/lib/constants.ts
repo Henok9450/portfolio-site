@@ -75,24 +75,25 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "celebration-platform",
-    title: "Dere & Tinsu Celebration Platform",
-    subtitle: "Real-Time Interactive Wedding & Event Platform",
+    title: "Interactive Celebration & Event Platform",
+    subtitle: "Real-Time Wedding & Event Platform with Digital Wish Signboard",
     category: "Frontend",
     featured: false,
-    problem: "Traditional event invitation sites are static announcements that lack interactive guest engagement, responsive event schedules, and real-time social participation.",
-    solution: "Engineered an elegant, animated event celebration platform featuring interactive RSVP management, real-time guestbook messaging, multimedia galleries, and responsive countdown timers.",
+    problem: "Traditional event invitation sites are static announcements that lack interactive guest engagement, leaving invited guests unable to share live congratulations or celebrate remotely.",
+    solution: "Engineered an elegant, real-time celebration platform featuring an interactive Digital Wish Signboard where invited guests can write, sign, and broadcast personal wishes and blessings live, accompanied by RSVP management and responsive countdown timers.",
     architecture: [
-      "Real-time guest interaction and message board powered by modern reactive database architecture",
+      "Real-time collaborative Digital Wish Signboard allowing invited guests to post and display live wishes",
+      "Interactive RSVP tracking and event schedule synchronization",
       "Performant CSS animations, micro-interactions, and smooth viewport transitions",
-      "Mobile-first responsive design tailored for wedding guests across smartphones and tablets",
-      "Fast edge delivery on Vercel with optimized asset loading and minimal bundle footprint"
+      "Mobile-first responsive design tailored for guests across smartphones and tablets",
+      "Fast edge delivery on Vercel with optimized asset loading and sub-second first paint"
     ],
-    tags: ["React", "TypeScript", "Tailwind CSS", "Vercel", "Real-Time Sync", "Mobile-First"],
+    tags: ["React", "TypeScript", "Digital Wish Signboard", "Real-Time Sync", "Tailwind CSS", "Vercel", "Mobile-First"],
     liveUrl: "https://dere-and-tinsu-wedding.vercel.app/",
     githubUrl: "https://github.com/Henok9450/dere-and-tinsu",
-    metrics: "Live interactive event platform with real-time guestbook",
+    metrics: "Live interactive event platform with real-time digital wish signboard",
     previewGradient: "from-rose-600/20 via-pink-600/20 to-amber-600/20",
-    clientNote: "Live interactive event celebration platform."
+    clientNote: "Live interactive wedding and event celebration platform."
   }
 ];
 
