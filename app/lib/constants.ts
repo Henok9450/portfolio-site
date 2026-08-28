@@ -32,21 +32,22 @@ export const PROJECTS: Project[] = [
   {
     id: "selah-cms",
     title: "SelahCMS",
-    subtitle: "Enterprise Church Cell & Member Management System",
+    subtitle: "Enterprise Cell & Member Management System (API-First Integration)",
     category: "Full-Stack",
     featured: true,
-    problem: "Churches and community organizations frequently struggle with fragmented member data, delayed attendance tracking, and lack of real-time communication across cell groups.",
-    solution: "Architected a responsive, cloud-powered management platform enabling seamless member onboarding, multi-tier cell group coordination, real-time attendance analytics, and structured ministry workflows.",
+    problem: "Churches and community organizations often operate with fragmented, legacy member databases, making cell group assignment and real-time attendance coordination cumbersome without unified data synchronization.",
+    solution: "Architected a responsive, cloud-powered management platform featuring an API-first integration layer that ingests and synchronizes member records from existing organizational databases, streamlines cell onboarding, and delivers real-time attendance analytics.",
     architecture: [
+      "API-first integration pipeline ingesting and synchronizing member records from existing upstream databases",
       "Role-based authentication & hierarchical access control with Firebase Auth",
-      "Real-time reactive state synchronization using Angular & RxJS",
-      "Cloud Firestore NoSQL data modeling for rapid querying & offline sync",
-      "Responsive, accessible design system tailored for desktop and mobile workflows"
+      "Real-time reactive state synchronization using Angular & RxJS observables",
+      "Cloud Firestore NoSQL data modeling for high-speed querying, filtering & offline synchronization",
+      "Responsive, accessible design system tailored for administrative desktop and mobile leader workflows"
     ],
-    tags: ["Angular", "TypeScript", "Firebase Auth", "Cloud Firestore", "RxJS", "Tailwind CSS", "UI/UX"],
+    tags: ["Angular", "TypeScript", "REST APIs", "API-First Integration", "Firebase Auth", "Cloud Firestore", "RxJS", "Tailwind CSS"],
     liveUrl: "https://selah-cms.vercel.app/login?returnUrl=%2Fhome",
     githubUrl: "https://github.com/Henok9450/SelahCMS",
-    metrics: "Production-ready management platform with real-time sync",
+    metrics: "Production platform with external database sync & real-time analytics",
     previewGradient: "from-blue-600/20 via-indigo-600/20 to-purple-600/20",
     clientNote: "Active client production deployment (authentication protected for organizational staff)."
   },
