@@ -73,23 +73,24 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "celebration-platform",
-    title: "Interactive Celebration Web App",
-    subtitle: "Real-Time Event & Social Celebration Platform",
+    title: "Dere & Tinsu Celebration Platform",
+    subtitle: "Real-Time Interactive Wedding & Event Platform",
     category: "Frontend",
     featured: false,
-    problem: "Standard event invitation pages are static, one-way announcements that fail to foster interactive community engagement and real-time social participation.",
-    solution: "Developed an engaging, animated event platform with real-time guest interactions, dynamic countdowns, interactive multimedia galleries, and instant guestbook messaging.",
+    problem: "Traditional event invitation sites are static announcements that lack interactive guest engagement, responsive event schedules, and real-time social participation.",
+    solution: "Engineered an elegant, animated event celebration platform featuring interactive RSVP management, real-time guestbook messaging, multimedia galleries, and responsive countdown timers.",
     architecture: [
-      "Real-time collaborative guestbook backed by Firebase Realtime Database",
-      "Smooth micro-interactions and performant CSS/canvas animations",
-      "Mobile-first responsive layout optimized for all device viewports",
-      "Optimized asset loading and lazy hydration for sub-second first paint"
+      "Real-time guest interaction and message board powered by modern reactive database architecture",
+      "Performant CSS animations, micro-interactions, and smooth viewport transitions",
+      "Mobile-first responsive design tailored for wedding guests across smartphones and tablets",
+      "Fast edge delivery on Vercel with optimized asset loading and minimal bundle footprint"
     ],
-    tags: ["Angular", "TypeScript", "Firebase Realtime DB", "CSS3 Motion", "Mobile-First"],
-    liveUrl: "https://jaelandlaelbirthday-onrender-com.onrender.com/",
-    githubUrl: "https://github.com/Henok9450",
-    metrics: "Live interactive event platform with real-time updates",
-    previewGradient: "from-rose-600/20 via-pink-600/20 to-amber-600/20"
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vercel", "Real-Time Sync", "Mobile-First"],
+    liveUrl: "https://dere-and-tinsu-wedding.vercel.app/",
+    githubUrl: "https://github.com/Henok9450/dere-and-tinsu",
+    metrics: "Live interactive event platform with real-time guestbook",
+    previewGradient: "from-rose-600/20 via-pink-600/20 to-amber-600/20",
+    clientNote: "Live interactive event celebration platform."
   }
 ];
 
