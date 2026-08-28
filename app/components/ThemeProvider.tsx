@@ -23,21 +23,16 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     setMounted(true);
     const savedTheme = localStorage.getItem('portfolio-theme') as Theme | null;
-    if (savedTheme) {
-      setThemeState(savedTheme);
-      if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
+    
+    // Explicitly default to 'dark' unless the user previously selected 'light'
+    if (savedTheme === 'light') {
+      setThemeState('light');
+      document.documentElement.classList.remove('dark');
     } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = prefersDark ? 'dark' : 'light';
-      setThemeState(initialTheme);
-      if (initialTheme === 'dark') {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
+      setThemeState('dark');
+      document.documentElement.classList.add('dark');
+      if (!savedTheme) {
+        localStorage.setItem('portfolio-theme', 'dark');
       }
     }
   }, []);
