@@ -54,21 +54,22 @@ export const PROJECTS: Project[] = [
   {
     id: "goodnews-catering",
     title: "GoodNews Cake & Catering",
-    subtitle: "Commercial Catering & Bakery Web Platform",
+    subtitle: "Commercial Catering & Bakery Web Platform (With Order Tracking)",
     category: "Full-Stack",
     featured: true,
-    problem: "Catering and bakery businesses frequently struggle with disjointed product displays, clunky mobile browsing, and missed custom order inquiries from customers.",
-    solution: "Engineered and deployed a responsive commercial web platform featuring interactive menu catalogs, specialized event catering workflows, and smooth mobile ordering experiences.",
+    problem: "Catering and bakery businesses frequently struggle with disjointed product displays, lack of order status visibility for customers, and friction in managing custom bakery requests.",
+    solution: "Engineered and deployed a responsive commercial web platform featuring interactive menu catalogs, customer order tracking, specialized event catering workflows, and smooth mobile ordering experiences.",
     architecture: [
       "Modular React component architecture optimized for fast page loads and smooth navigation",
       "Dynamic catalog showcasing custom cakes, catering packages, and seasonal menus",
+      "Real-time order tracking pipeline providing customers with transparent fulfillment updates",
       "Seamless customer inquiry dispatch system tailored for mobile and desktop clients",
       "Edge-deployed on Vercel with automated CI/CD and mobile-first asset optimization"
     ],
-    tags: ["React", "JavaScript", "CSS3 / Styling", "Vercel", "UI/UX Design", "Commercial Platform"],
+    tags: ["React", "JavaScript", "Order Tracking", "CSS3 / Styling", "Vercel", "UI/UX Design", "Commercial Platform"],
     liveUrl: "https://goodnews-cake-and-catering.vercel.app/",
     githubUrl: "https://github.com/Henok9450/goodnews-cake-and-catering",
-    metrics: "Live production commercial platform driving custom orders",
+    metrics: "Live commercial platform featuring real-time order tracking & custom bookings",
     previewGradient: "from-amber-600/20 via-orange-600/20 to-rose-600/20",
     clientNote: "Live commercial production platform for GoodNews Cake & Catering."
   },
