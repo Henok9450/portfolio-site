@@ -1,21 +1,33 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
-  --card-bg: rgba(255, 255, 255, 0.85);
-  --card-border: rgba(226, 232, 240, 0.8);
-  --accent-primary: #3b82f6;
-  --accent-secondary: #6366f1;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
 }
 
 .dark {
   --background: #090d16;
   --foreground: #f1f5f9;
-  --card-bg: rgba(15, 23, 42, 0.75);
-  --card-border: rgba(51, 65, 85, 0.5);
-  --accent-primary: #60a5fa;
-  --accent-secondary: #818cf8;
+  --card-bg: #0f172a;
+  --card-border: #1e293b;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+  color-scheme: light dark;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  color-scheme: light;
 }
 
 body {
@@ -25,6 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 /* Custom subtle scrollbar */
@@ -50,10 +63,8 @@ body {
 
 /* Glow & Blur Utilities */
 .glass-card {
-  background: var(--card-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
 }
 
 .subtle-glow {
