@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
     ],
     tags: ["React", "JavaScript", "CSS3 / Styling", "Vercel", "UI/UX Design", "Commercial Platform"],
     liveUrl: "https://goodnews-cake-and-catering.vercel.app/",
-    githubUrl: "https://github.com/Henok9450",
+    githubUrl: "https://github.com/Henok9450/goodnews-cake-and-catering",
     metrics: "Live production commercial platform driving custom orders",
     previewGradient: "from-amber-600/20 via-orange-600/20 to-rose-600/20",
     clientNote: "Live commercial production platform for GoodNews Cake & Catering."
