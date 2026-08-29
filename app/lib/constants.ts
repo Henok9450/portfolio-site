@@ -24,7 +24,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://www.linkedin.com/in/henok-birhanu",
   status: "Available for Full-Time Roles & High-Impact Contracts",
   bio: "Frontend and full-stack engineer passionate about building high-performance, accessible, and user-centric web applications. Specializing in React, Next.js, Angular, TypeScript, and modern cloud architectures.",
-  yearsExperience: "3+",
+  yearsExperience: "5+",
   resumeUrl: "/resume.pdf"
 };
 

@@ -57,7 +57,7 @@ export default function About() {
                 I am a dedicated Frontend & Full-Stack Engineer based in Addis Ababa, Ethiopia, working with distributed teams and clients across the globe.
               </p>
               <p>
-                Over the past 3+ years, I have architected and deployed responsive web platforms ranging from enterprise cell management systems to reactive event tools and full-stack commerce storefronts.
+                Over the past 5+ years, I have architected and deployed responsive web platforms ranging from enterprise cell management systems to reactive event tools and full-stack commerce storefronts.
               </p>
               <p>
                 My approach prioritizes TypeScript type-safety, semantic accessibility (WCAG AA), component modularity, and smooth micro-interactions that keep users engaged without compromising performance.

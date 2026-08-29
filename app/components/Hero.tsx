@@ -177,7 +177,7 @@ export default function Hero() {
                 {/* Key Metrics Quick Cards */}
                 <div className="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
                   <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 text-center">
-                    <div className="text-lg font-bold text-slate-900 dark:text-white">3+ Years</div>
+                    <div className="text-lg font-bold text-slate-900 dark:text-white">{PERSONAL_INFO.yearsExperience} Years</div>
                     <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Software Dev</div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 text-center">
