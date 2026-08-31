@@ -44,7 +44,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/Henok9450",
   linkedin: "https://www.linkedin.com/in/henok-birhanu",
   status: "Available for Full-Time Roles & Enterprise Engineering Projects",
-  bio: "Application Support & Core Systems Engineer with 10+ years of IT experience supporting enterprise applications, core banking systems (Oracle FLEXCUBE), WebLogic/SOA middleware, REST APIs, and full-stack software development with React, Angular, and TypeScript. ITIL v4 and PMP certified.",
+  bio: "Application Support & Core Systems Engineer with 10+ years of IT experience supporting enterprise applications, core banking systems (Oracle FLEXCUBE), WebLogic/SOA middleware, REST APIs, and full-stack software development with React, Angular, and TypeScript. ITIL v4 certified.",
   yearsExperience: "10+",
   resumeUrl: "/resume.pdf",
   languages: [
@@ -120,11 +120,6 @@ export const EDUCATION_AND_CERTIFICATIONS = {
     }
   ],
   certifications: [
-    {
-      title: "PMP® – Project Management Professional",
-      issuer: "Project Management Institute (PMI)",
-      highlight: true
-    },
     {
       title: "ITIL® 4 Foundation / Certified",
       issuer: "AXELOS / PeopleCert",
@@ -296,7 +291,7 @@ export const ENGINEERING_PILLARS = [
   },
   {
     title: "Disciplined ITIL & Project Delivery",
-    description: "Applying certified ITIL v4 service management and PMP methodologies for controlled releases, rigorous UAT, and seamless vendor coordination."
+    description: "Applying certified ITIL v4 service management methodologies for controlled releases, rigorous UAT, and seamless vendor coordination."
   }
 ];
 

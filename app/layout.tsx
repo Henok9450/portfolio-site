@@ -118,10 +118,6 @@ const jsonLd = {
   hasCredential: [
     {
       '@type': 'EducationalOccupationalCredential',
-      name: 'PMP® – Project Management Professional',
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
       name: 'ITIL® 4 Foundation / Certified',
     },
     {
@@ -160,7 +156,7 @@ const jsonLd = {
     'High Availability & Disaster Recovery',
     'Linux & Shell Automation',
     'ITIL v4 Service Management',
-    'Project Management (PMP)',
+    'Full-Stack Software Development',
     'React',
     'Next.js',
     'Angular',
