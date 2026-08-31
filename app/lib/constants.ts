@@ -17,13 +17,15 @@ export interface Project {
 
 export const PERSONAL_INFO = {
   name: "Henok Birhanu",
-  role: "Frontend & Full-Stack Engineer",
+  role: "Core Systems & Software Engineer",
+  titleHeadline: "Core Systems & Software Engineer",
+  specialization: "Core Banking • Enterprise Middleware • Full-Stack Development",
   location: "Addis Ababa, Ethiopia (Open to Remote Globally)",
   email: "henok9450@gmail.com",
   github: "https://github.com/Henok9450",
   linkedin: "https://www.linkedin.com/in/henok-birhanu",
-  status: "Available for Full-Time Roles & High-Impact Contracts",
-  bio: "Frontend and full-stack engineer passionate about building high-performance, accessible, and user-centric web applications. Specializing in React, Next.js, Angular, TypeScript, and modern cloud architectures.",
+  status: "Available for Full-Time Roles & Enterprise Engineering Projects",
+  bio: "Core Systems and Software Engineer specializing in enterprise banking systems, Oracle, WebLogic, FLEXCUBE, APIs, React, Angular, and cloud technologies with 5+ years of software engineering and enterprise IT experience.",
   yearsExperience: "5+",
   resumeUrl: "/resume.pdf"
 };
@@ -110,57 +112,58 @@ export interface SkillCategory {
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
+    title: "Enterprise & Core Systems",
+    description: "Core banking platforms, enterprise middleware, database administration, and mission-critical high availability.",
+    skills: [
+      { name: "Oracle FLEXCUBE", level: "Advanced", description: "Core banking workflows, transaction processing, accounting modules & banking integrations", highlight: true },
+      { name: "Oracle WebLogic & SOA", level: "Advanced", description: "Enterprise middleware deployment, JMS messaging, clustering & server management", highlight: true },
+      { name: "Oracle Database & PL/SQL", level: "Advanced", description: "Complex schemas, stored procedures, query optimization & high-availability tuning", highlight: true },
+      { name: "Enterprise Application Support", level: "Advanced", description: "Incident management, 24/7 mission-critical operations, system health & performance monitoring", highlight: true },
+      { name: "API & Middleware Integration", level: "Advanced", description: "RESTful Web Services, financial switch protocols, ISO interfaces & secure webhooks", highlight: true },
+      { name: "Linux & System Administration", level: "Proficient", description: "Oracle Linux, shell automation, security hardening & enterprise infrastructure" }
+    ]
+  },
+  {
     title: "Frontend Engineering",
-    description: "Crafting fast, accessible, and pixel-perfect user interfaces with modern web standards.",
+    description: "Crafting fast, accessible, and responsive user interfaces with modern web standards.",
     skills: [
-      { name: "React 19 & Next.js", level: "Advanced", description: "SSR, SSG, Server Components, App Router, Hooks & Performance", highlight: true },
-      { name: "Angular", level: "Advanced", description: "Modular architecture, RxJS, Dependency Injection, Signals & Forms", highlight: true },
-      { name: "TypeScript", level: "Advanced", description: "Strict typing, generics, interfaces, and scalable codebases", highlight: true },
-      { name: "Tailwind CSS", level: "Advanced", description: "Utility-first design systems, modern CSS variables & responsive grids", highlight: true },
-      { name: "HTML5 & Modern CSS", level: "Advanced", description: "Semantic markup, CSS Grid/Flexbox, animations & WCAG AA standards" },
-      { name: "State Management", level: "Proficient", description: "Zustand, Context API, Redux Toolkit, RxJS Observables" }
+      { name: "React 19 & Next.js", level: "Advanced", description: "SSR, SSG, Server Components, App Router, Hooks & Core Web Vitals optimization", highlight: true },
+      { name: "Angular", level: "Advanced", description: "Modular enterprise architecture, RxJS observables, Signals & Reactive Forms", highlight: true },
+      { name: "TypeScript", level: "Advanced", description: "Strict type safety, generics, modular design systems & scalable codebases", highlight: true },
+      { name: "Tailwind CSS", level: "Advanced", description: "Utility-first design tokens, dark/light theme systems & responsive grids", highlight: true },
+      { name: "HTML5, CSS3 & WCAG AA", level: "Advanced", description: "Semantic markup, CSS Grid/Flexbox, keyboard accessibility & WCAG 2.2 AA standards" },
+      { name: "State Management", level: "Proficient", description: "Zustand, Context API, Redux Toolkit & RxJS Reactive Streams" }
     ]
   },
   {
-    title: "Backend & Cloud Services",
-    description: "Developing robust APIs, authentication pipelines, and scalable cloud data layers.",
+    title: "Backend, Cloud & DevOps",
+    description: "Developing resilient backend services, cloud architectures, and CI/CD pipelines.",
     skills: [
-      { name: "Node.js & Express", level: "Proficient", description: "RESTful API design, middleware, auth & error handling", highlight: true },
-      { name: "Firebase Suite", level: "Advanced", description: "Firestore, Realtime DB, Auth, Cloud Functions & Security Rules", highlight: true },
+      { name: "Node.js & Express", level: "Proficient", description: "REST API architectures, middleware design, JWT authentication & error handling", highlight: true },
+      { name: "Firebase Suite", level: "Advanced", description: "Firestore, Realtime DB, Cloud Auth, Cloud Functions & Security Rules", highlight: true },
       { name: "Python", level: "Proficient", description: "Backend scripting, automation, data handling & API services" },
-      { name: "PostgreSQL & MongoDB", level: "Proficient", description: "Relational and document schema design, indexing & CRUD operations" },
-      { name: "REST APIs & Integration", level: "Advanced", description: "Third-party payment gateways (Stripe), webhooks & API security" }
-    ]
-  },
-  {
-    title: "Architecture, Tools & Best Practices",
-    description: "Disciplined engineering practices ensuring maintainability, speed, and reliability.",
-    skills: [
-      { name: "Git & GitHub", level: "Advanced", description: "Branching strategies, PR reviews, CI/CD workflows", highlight: true },
-      { name: "Performance Optimization", level: "Advanced", description: "Core Web Vitals, code splitting, bundle minimization & asset optimization", highlight: true },
-      { name: "Web Accessibility (A11y)", level: "Proficient", description: "WCAG 2.2 AA compliance, keyboard navigation, screen reader support" },
-      { name: "UI/UX & Design Systems", level: "Advanced", description: "Component-driven design, responsive layouts, micro-interactions" },
-      { name: "Deployment & Hosting", level: "Proficient", description: "Vercel, Render, Firebase Hosting, Cloudflare DNS" }
+      { name: "PostgreSQL & MongoDB", level: "Proficient", description: "Relational and document database design, indexing & CRUD operations" },
+      { name: "Git & CI/CD Deployment", level: "Advanced", description: "Git workflows, automated testing, Vercel, Render & cloud hosting", highlight: true }
     ]
   }
 ];
 
 export const ENGINEERING_PILLARS = [
   {
-    title: "Performance by Default",
-    description: "Optimizing for Core Web Vitals (LCP, INP, CLS) through code splitting, efficient state management, and minimal client-side runtime bloat."
+    title: "Mission-Critical High Availability",
+    description: "Engineering fault-tolerant enterprise architectures, robust middleware configurations, and proactive monitoring to guarantee continuous uptime."
   },
   {
-    title: "Accessible & Universal",
+    title: "Performance by Default",
+    description: "Optimizing for Core Web Vitals (LCP, INP, CLS) through code splitting, efficient database indexing, and minimal runtime overhead."
+  },
+  {
+    title: "Accessible & Universal Design",
     description: "Building inclusive experiences meeting WCAG 2.2 AA standards with semantic HTML, keyboard operability, and proper ARIA relationships."
   },
   {
-    title: "Clean Architecture",
-    description: "Writing maintainable, modular, and strongly-typed TypeScript code that teams can scale, refactor, and test with confidence."
-  },
-  {
-    title: "Business & User Focused",
-    description: "Bridging the gap between engineering execution and business objectives to ship products that delight users and drive real outcomes."
+    title: "Secure Enterprise Integration",
+    description: "Connecting core banking backends, middleware, and client applications via secure, strongly typed REST APIs and robust data contracts."
   }
 ];
 

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://henokbirhanu.dev/sitemap.xml',
+    sitemap: 'https://henokbirhanu-portfolio.vercel.app/sitemap.xml',
   };
 }

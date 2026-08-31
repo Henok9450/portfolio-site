@@ -47,17 +47,17 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15] mb-6">
-              Engineering modern, <br className="hidden sm:inline" />
+              Engineering resilient, <br className="hidden sm:inline" />
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 dark:from-blue-400 dark:via-indigo-300 dark:to-cyan-400 bg-clip-text text-transparent">
-                high-performance web products
+                core systems & web platforms
               </span>
             </h1>
 
             {/* Sub-headline / Value Proposition */}
             <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mb-8">
               Hi, I&apos;m <span className="font-semibold text-slate-900 dark:text-white">Henok Birhanu</span>. 
-              A Frontend & Full-Stack Engineer specializing in <span className="font-semibold text-blue-600 dark:text-blue-400">React</span>, <span className="font-semibold text-blue-600 dark:text-blue-400">Next.js</span>, <span className="font-semibold text-blue-600 dark:text-blue-400">Angular</span>, and <span className="font-semibold text-blue-600 dark:text-blue-400">TypeScript</span>. 
-              I build scalable, accessible, and production-grade applications that convert visitors and solve complex user workflows.
+              A Core Systems & Software Engineer specializing in <span className="font-semibold text-blue-600 dark:text-blue-400">Core Banking (Oracle FLEXCUBE)</span>, <span className="font-semibold text-blue-600 dark:text-blue-400">WebLogic & SOA</span>, <span className="font-semibold text-blue-600 dark:text-blue-400">React</span>, <span className="font-semibold text-blue-600 dark:text-blue-400">Angular</span>, and <span className="font-semibold text-blue-600 dark:text-blue-400">TypeScript</span>. 
+              I architect mission-critical enterprise systems and high-performance modern web applications.
             </p>
 
             {/* Action Buttons & Fast CTAs */}
@@ -137,7 +137,7 @@ export default function Hero() {
 
               <div className="hidden sm:flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
-                <span>React 19 • Next.js • Angular • TypeScript • Firebase</span>
+                <span>Core Banking • Oracle FLEXCUBE • WebLogic • React • Angular • TypeScript</span>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function Hero() {
                   <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden mb-4 border-2 border-slate-100 dark:border-slate-800 shadow-md bg-slate-100 dark:bg-slate-800">
                     <Image
                       src="/images/profile.png"
-                      alt="Henok Birhanu - Frontend & Full-Stack Engineer"
+                      alt="Henok Birhanu — Core Systems & Software Engineer"
                       fill
                       priority
                       sizes="(max-width: 768px) 176px, 176px"
@@ -167,7 +167,7 @@ export default function Hero() {
                     Henok Birhanu
                   </h3>
                   <p className="text-sm font-medium text-blue-600 dark:text-blue-400 mt-0.5">
-                    Frontend & Full-Stack Engineer
+                    Core Systems & Software Engineer
                   </p>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                     Addis Ababa • Global Remote
@@ -178,18 +178,18 @@ export default function Hero() {
                 <div className="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
                   <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 text-center">
                     <div className="text-lg font-bold text-slate-900 dark:text-white">{PERSONAL_INFO.yearsExperience} Years</div>
-                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Software Dev</div>
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Software & Systems Dev</div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 text-center">
                     <div className="text-lg font-bold text-blue-600 dark:text-blue-400">100%</div>
-                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Code Quality & A11y</div>
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">High Availability & A11y</div>
                   </div>
                 </div>
 
                 {/* Quick Trust Highlight */}
                 <div className="mt-4 p-3 rounded-xl bg-blue-50/50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40 flex items-center gap-2.5 text-xs text-blue-900 dark:text-blue-200">
                   <HiSparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
-                  <span>Specialized in reactive architectures, high-scale cloud sync, and enterprise web systems.</span>
+                  <span>Specialized in core banking systems, enterprise middleware, and high-performance modern web platforms.</span>
                 </div>
               </div>
             </div>

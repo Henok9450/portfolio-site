@@ -24,7 +24,7 @@ export default function Footer() {
             </span>
             <span className="text-slate-300 dark:text-slate-700">•</span>
             <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Frontend & Full-Stack Engineer
+              Core Systems & Software Engineer
             </span>
           </div>
           <p className="text-xs text-slate-500 dark:text-slate-400">

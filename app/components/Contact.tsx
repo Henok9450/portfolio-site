@@ -94,7 +94,7 @@ export default function Contact() {
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                Open to Full-Time Senior Frontend / Full-Stack opportunities, contract engagements, and architectural consultations worldwide.
+                Open to Full-Time Core Systems & Software Engineering roles, enterprise architecture consultations, and high-impact engineering projects worldwide.
               </p>
 
               <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3">

@@ -54,13 +54,13 @@ export default function About() {
             
             <div className="space-y-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
               <p>
-                I am a dedicated Frontend & Full-Stack Engineer based in Addis Ababa, Ethiopia, working with distributed teams and clients across the globe.
+                I am a dedicated Core Systems & Software Engineer based in Addis Ababa, Ethiopia, supporting mission-critical enterprise platforms and collaborating with distributed teams globally.
               </p>
               <p>
-                Over the past 5+ years, I have architected and deployed responsive web platforms ranging from enterprise cell management systems to reactive event tools and full-stack commerce storefronts.
+                Over the past 5+ years, my work has spanned core banking systems (Oracle FLEXCUBE), enterprise middleware (WebLogic, SOA), high-availability database environments, and full-stack software development with React, Angular, and TypeScript.
               </p>
               <p>
-                My approach prioritizes TypeScript type-safety, semantic accessibility (WCAG AA), component modularity, and smooth micro-interactions that keep users engaged without compromising performance.
+                Whether fine-tuning transactional core banking pipelines or building accessible, high-performance web applications, I prioritize strict reliability, clean architecture, and seamless API integration.
               </p>
             </div>
 
