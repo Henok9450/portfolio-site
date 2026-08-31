@@ -17,6 +17,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [copied, setCopied] = useState(false);
+  const [phoneCopied, setPhoneCopied] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
   const FORMSPREE_FORM_ID = "xzzvljbr";
@@ -25,6 +26,12 @@ export default function Contact() {
     navigator.clipboard.writeText(PERSONAL_INFO.email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
+  };
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText(PERSONAL_INFO.phone);
+    setPhoneCopied(true);
+    setTimeout(() => setPhoneCopied(false), 2500);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -90,39 +97,79 @@ export default function Contact() {
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
                 </span>
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                  Current Availability
+                  Current Availability & Mobility
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                Open to Full-Time Core Systems & Software Engineering roles, enterprise architecture consultations, and high-impact engineering projects worldwide.
+                Open to Full-Time Core Systems & Software Engineering roles, enterprise architecture consultations, and production support worldwide. <span className="font-semibold text-slate-800 dark:text-slate-200">Open to relocation (UAE & international) and remote engagements.</span>
               </p>
 
-              <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3">
-                <div className="flex items-center gap-3 overflow-hidden">
-                  <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
-                    <HiMail className="w-5 h-5" />
+              <div className="space-y-3">
+                {/* Email card */}
+                <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 overflow-hidden">
+                    <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
+                      <HiMail className="w-5 h-5" />
+                    </div>
+                    <div className="flex flex-col truncate">
+                      <span className="text-[11px] font-medium text-slate-400">Direct Email</span>
+                      <span className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 truncate">
+                        {PERSONAL_INFO.email}
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex flex-col truncate">
-                    <span className="text-[11px] font-medium text-slate-400">Direct Email</span>
-                    <span className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 truncate">
-                      {PERSONAL_INFO.email}
-                    </span>
-                  </div>
+
+                  <button
+                    type="button"
+                    onClick={handleCopyEmail}
+                    className="p-2 rounded-xl text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shrink-0"
+                    title="Copy email address"
+                    aria-label="Copy email address"
+                  >
+                    {copied ? (
+                      <HiCheck className="w-4 h-4 text-emerald-500" />
+                    ) : (
+                      <HiOutlineClipboardCopy className="w-4 h-4" />
+                    )}
+                  </button>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={handleCopyEmail}
-                  className="p-2 rounded-xl text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shrink-0"
-                  title="Copy email address"
-                  aria-label="Copy email address"
-                >
-                  {copied ? (
-                    <HiCheck className="w-4 h-4 text-emerald-500" />
-                  ) : (
-                    <HiOutlineClipboardCopy className="w-4 h-4" />
-                  )}
-                </button>
+                {/* Direct Phone Card */}
+                <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 overflow-hidden">
+                    <div className="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400">
+                      <HiOutlineChatAlt2 className="w-5 h-5" />
+                    </div>
+                    <div className="flex flex-col truncate">
+                      <span className="text-[11px] font-medium text-slate-400">Direct Phone / WhatsApp</span>
+                      <span className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 truncate">
+                        {PERSONAL_INFO.phone}
+                      </span>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={handleCopyPhone}
+                    className="p-2 rounded-xl text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shrink-0"
+                    title="Copy phone number"
+                    aria-label="Copy phone number"
+                  >
+                    {phoneCopied ? (
+                      <HiCheck className="w-4 h-4 text-emerald-500" />
+                    ) : (
+                      <HiOutlineClipboardCopy className="w-4 h-4" />
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              {/* Language badges */}
+              <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+                <span className="font-semibold text-slate-700 dark:text-slate-300">Languages:</span>
+                <span>English (Fluent)</span>
+                <span>•</span>
+                <span>Amharic (Native)</span>
               </div>
             </div>
 

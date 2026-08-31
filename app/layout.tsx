@@ -94,15 +94,56 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: PERSONAL_INFO.name,
+  name: PERSONAL_INFO.fullName,
+  alternateName: PERSONAL_INFO.name,
   url: `${CANONICAL_URL}/`,
   jobTitle: PERSONAL_INFO.role,
   description:
-    'Core Systems and Software Engineer specializing in enterprise banking systems, Oracle, WebLogic, FLEXCUBE, API integration and modern software development.',
+    'Application Support & Core Systems Engineer with 10+ years of IT experience supporting enterprise applications, core banking systems (Oracle FLEXCUBE), WebLogic/SOA middleware, REST APIs, and full-stack software development with React, Angular, and TypeScript.',
   image: `${CANONICAL_URL}/images/profile.png`,
+  telephone: PERSONAL_INFO.phone,
+  email: `mailto:${PERSONAL_INFO.email}`,
   sameAs: [
     PERSONAL_INFO.linkedin,
     PERSONAL_INFO.github,
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Zemen Bank S.C.',
+  },
+  alumniOf: {
+    '@type': 'EducationalOrganization',
+    name: 'Madda Walabu University',
+  },
+  hasCredential: [
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'PMP® – Project Management Professional',
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'ITIL® 4 Foundation / Certified',
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'AWS Certified Solutions Architect – Associate',
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Oracle Database & WebLogic Administration',
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Oracle SOA Administration',
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Oracle Java SE 11 Developer',
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'CCNA (Cisco Certified Network Associate)',
+    },
   ],
   knowsAbout: [
     'Core Banking',
@@ -110,26 +151,27 @@ const jsonLd = {
     'Oracle WebLogic',
     'Oracle SOA',
     'Oracle Database',
-    'Enterprise Systems',
-    'Enterprise Application Support',
-    'Middleware',
+    'Enterprise Applications Support',
+    'Production Support & L2/L3 Incident Management',
+    'Root Cause Analysis (RCA)',
+    'Middleware Administration',
     'API Integration',
-    'REST APIs',
-    'High Availability',
-    'Linux',
+    'REST / SOAP APIs',
+    'High Availability & Disaster Recovery',
+    'Linux & Shell Automation',
+    'ITIL v4 Service Management',
+    'Project Management (PMP)',
     'React',
     'Next.js',
     'Angular',
     'TypeScript',
     'JavaScript',
-    'Node.js',
     'Python',
+    'Node.js',
     'Firebase',
     'PostgreSQL',
     'MongoDB',
-    'Cloud',
-    'DevOps',
-    'Software Engineering'
+    'AWS Cloud Architecture'
   ],
 };
 

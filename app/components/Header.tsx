@@ -14,6 +14,7 @@ import {
 
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
@@ -29,7 +30,7 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = ['home', 'about', 'projects', 'skills', 'contact'];
+      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'contact'];
       const scrollPosition = window.scrollY + 120;
 
       for (const sectionId of sections) {
