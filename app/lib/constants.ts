@@ -25,8 +25,8 @@ export const PERSONAL_INFO = {
   github: "https://github.com/Henok9450",
   linkedin: "https://www.linkedin.com/in/henok-birhanu",
   status: "Available for Full-Time Roles & Enterprise Engineering Projects",
-  bio: "Core Systems and Software Engineer specializing in enterprise banking systems, Oracle, WebLogic, FLEXCUBE, APIs, React, Angular, and cloud technologies with 5+ years of software engineering and enterprise IT experience.",
-  yearsExperience: "5+",
+  bio: "Core Systems and Software Engineer specializing in enterprise banking systems, Oracle, WebLogic, FLEXCUBE, APIs, React, Angular, and cloud technologies with 10+ years of software engineering and enterprise IT experience.",
+  yearsExperience: "10+",
   resumeUrl: "/resume.pdf"
 };
 

@@ -57,7 +57,7 @@ export default function About() {
                 I am a dedicated Core Systems & Software Engineer based in Addis Ababa, Ethiopia, supporting mission-critical enterprise platforms and collaborating with distributed teams globally.
               </p>
               <p>
-                Over the past 5+ years, my work has spanned core banking systems (Oracle FLEXCUBE), enterprise middleware (WebLogic, SOA), high-availability database environments, and full-stack software development with React, Angular, and TypeScript.
+                Over the past 10+ years, my work has spanned core banking systems (Oracle FLEXCUBE), enterprise middleware (WebLogic, SOA), high-availability database environments, and full-stack software development with React, Angular, and TypeScript.
               </p>
               <p>
                 Whether fine-tuning transactional core banking pipelines or building accessible, high-performance web applications, I prioritize strict reliability, clean architecture, and seamless API integration.
