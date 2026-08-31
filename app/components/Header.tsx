@@ -127,7 +127,7 @@ export default function Header() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="p-2.5 rounded-xl text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="min-w-[44px] min-h-[44px] p-2.5 rounded-xl text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:ring-2 focus:ring-blue-500 focus:outline-none flex items-center justify-center"
             aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
           >
             {theme === 'dark' ? (
@@ -142,7 +142,7 @@ export default function Header() {
             href={PERSONAL_INFO.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100 border border-slate-700/50 shadow-sm transition-all hover:shadow hover:-translate-y-0.5"
+            className="hidden sm:inline-flex items-center gap-2 min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100 border border-slate-700/50 shadow-sm transition-all hover:shadow hover:-translate-y-0.5"
             aria-label="Download Henok's Resume"
           >
             <HiDocumentText className="w-4 h-4 text-blue-400" />
@@ -153,7 +153,7 @@ export default function Header() {
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className="hidden lg:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
+            className="hidden lg:inline-flex items-center gap-1.5 min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
           >
             <span>Let&apos;s Talk</span>
             <HiArrowRight className="w-3.5 h-3.5" />
@@ -163,7 +163,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2.5 rounded-xl text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:ring-2 focus:ring-blue-500"
+            className="md:hidden min-w-[44px] min-h-[44px] p-2.5 rounded-xl text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:ring-2 focus:ring-blue-500 flex items-center justify-center"
             aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={mobileMenuOpen}
           >

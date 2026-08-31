@@ -59,7 +59,8 @@ export default function Projects() {
           {filteredProjects.map((project: Project) => (
             <article
               key={project.id}
-              className="group relative rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+              id={project.id}
+              className="group relative rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden scroll-mt-28"
             >
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 

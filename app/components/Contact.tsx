@@ -11,7 +11,7 @@ import {
   HiCheck,
   HiPaperAirplane
 } from 'react-icons/hi';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -119,19 +119,29 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={handleCopyEmail}
-                    className="p-2 rounded-xl text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shrink-0"
-                    title="Copy email address"
-                    aria-label="Copy email address"
-                  >
-                    {copied ? (
-                      <HiCheck className="w-4 h-4 text-emerald-500" />
-                    ) : (
-                      <HiOutlineClipboardCopy className="w-4 h-4" />
-                    )}
-                  </button>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <a
+                      href={`mailto:${PERSONAL_INFO.email}`}
+                      className="min-w-[44px] min-h-[44px] p-2.5 rounded-xl text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/80 transition-colors flex items-center justify-center"
+                      title="Send email directly"
+                      aria-label={`Send email to ${PERSONAL_INFO.email}`}
+                    >
+                      <HiMail className="w-4 h-4" />
+                    </a>
+                    <button
+                      type="button"
+                      onClick={handleCopyEmail}
+                      className="min-w-[44px] min-h-[44px] p-2.5 rounded-xl text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-center"
+                      title="Copy email address"
+                      aria-label="Copy email address to clipboard"
+                    >
+                      {copied ? (
+                        <HiCheck className="w-4 h-4 text-emerald-500" />
+                      ) : (
+                        <HiOutlineClipboardCopy className="w-4 h-4" />
+                      )}
+                    </button>
+                  </div>
                 </div>
 
                 {/* Direct Phone Card */}
@@ -148,19 +158,29 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={handleCopyPhone}
-                    className="p-2 rounded-xl text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shrink-0"
-                    title="Copy phone number"
-                    aria-label="Copy phone number"
-                  >
-                    {phoneCopied ? (
-                      <HiCheck className="w-4 h-4 text-emerald-500" />
-                    ) : (
-                      <HiOutlineClipboardCopy className="w-4 h-4" />
-                    )}
-                  </button>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <a
+                      href="tel:+251933738330"
+                      className="min-w-[44px] min-h-[44px] p-2.5 rounded-xl text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/80 transition-colors flex items-center justify-center"
+                      title="Call phone number directly"
+                      aria-label="Call +251 933 738 330 directly"
+                    >
+                      <FaPhone className="w-3.5 h-3.5" />
+                    </a>
+                    <button
+                      type="button"
+                      onClick={handleCopyPhone}
+                      className="min-w-[44px] min-h-[44px] p-2.5 rounded-xl text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-center"
+                      title="Copy phone number"
+                      aria-label="Copy phone number to clipboard"
+                    >
+                      {phoneCopied ? (
+                        <HiCheck className="w-4 h-4 text-emerald-500" />
+                      ) : (
+                        <HiOutlineClipboardCopy className="w-4 h-4" />
+                      )}
+                    </button>
+                  </div>
                 </div>
               </div>
 
